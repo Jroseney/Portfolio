@@ -16,8 +16,7 @@ body{
     background-size: cover;
    background-position: center;
 }
-.container{
-    padding: 10px 10%;
+.container{padding: 10px 10%;
 }
 nav{
     display: flex;
@@ -118,4 +117,10 @@ header-text h1 span{
 .tab-contents ul li span{
     color: #b54769;
     font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
 }
