@@ -23,6 +23,9 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+nav a:hover{
+    color: aqua;
+}
 .logo{
     width: 140px;
 }
