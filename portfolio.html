@@ -9,6 +9,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title> personal portfolio website - easy tutorials</title>
     <link rel="stylesheet"href="portfolio.html" ref="style.css">
+
 </head>
 
 <body>
@@ -16,33 +17,11 @@
     <div class="container">
       <nav>
          <!--<img src="images/logo.png" class="logo">-->
-          <ul>
-              <li><a href="index.html" >home</a></li>
-              <li><a href="about.html" >about</a></li>
-              <li><a href="resume.html" >resume</a></li>
-              <li><a href="portfolio.html" >portfoio</a></li>
-          </ul>
+          <a href="aboutme.html" >about</a>
+          <a href="portfolio.html" >portfoio</a>
       </nav>
-        <div class="header-text">
-            <div class="header-text">
-                <p>UI/UX Designer</p>
-                <H1>hi i'm <span>Jelik</span><br>Roseney from boston </H1>
-                <p>hi my name is Jelik Roseney and I go to madison park high school and im lrning cpwd</p>
-                <a href="#">learn more</a>
-                 <div class="tab-titles">
-                     <p>class="tab-titles active-link"skills</p>
-                     <p>class="tab-titles"Experience</p>
-                     <p>class="tab-titles"education</p>
-                 </div>
-                <div class="tab-contents">
-                    <ul>
-                        <li><span>ui/ux</span><br>drsigning web/app interfaces</li>
-                        <li><span>web development</span><br>web app development</li>
-                        <li><span>app development</span><br>building  android/ios interfaces</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+
+
     </div>
   <!--  ----------potfolio---------- -->
 </div>
@@ -50,27 +29,48 @@
     <div class="container">
          <div class="row">
              <div class="about-col-1">
-         </div>
+             </div>
              <div class="about-col-2">
                  <h1 class="sub-title">about me</h1>
              </div>
          </div>
+    </div>
 </div>
+<h2>Accordion</h2>
+
+<button class="accordion"> progit1</button>
+<div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <img src="https://www.google.com/logos/doodles/2024/lola-beltrans-92nd-birthday-6753651837108878.3-law.gif" />
 </div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
 <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tablinks = document.getElementsByClassName("tab-links");
+    var acc = document.getElementsByClassName("accordion");
+    var i;
 
-    function openteb(tabname){
-        for(tablinks of tablinks) {
-            tablinks.classList.remove("active-link");
-        }
-            for (tabcontent of tabcontent){
-                tabcontent.classList.remove("active-tab");
-
-        }
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
     }
 </script>
+
 </body>
 
 
