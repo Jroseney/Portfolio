@@ -24,7 +24,7 @@ nav{
     flex-wrap: wrap;
 }
 nav a:hover{
-    color: aqua;
+    color:orangered;
 }
 .logo{
     width: 140px;
@@ -166,5 +166,7 @@ nav ul li a:hover:after{
     background-color: white;
     overflow: hidden;
 }
-
+#navigation{
+    background-color: aqua;
+}
 
