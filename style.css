@@ -44,7 +44,7 @@ nav ul li a{
 }
 nav ul li a::after{
     content: '';
-    width: 0%;
+    width: 0;
     height: 3px;
     background: #ff004f;
     left: 0;
