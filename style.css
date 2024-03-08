@@ -169,4 +169,8 @@ nav ul li a:hover:after{
 #navigation{
     background-color: aqua;
 }
+nav a{
+   width: 35%;
+}
+
 
