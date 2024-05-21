@@ -171,5 +171,11 @@ nav ul li a:hover:after{
 }
 nav a{
    width: 20%;
+    color: orangered;
 }
-
+a{
+    color: aqua;
+}
+p{
+    text-indent: 50px;
+}
