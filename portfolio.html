@@ -15,7 +15,7 @@
 <body>
 <nav id="navigation">
     <span>Jelik Roseney</span>
-    <img src="image/logo.jpg" alt="logo" width="69">
+    <img src="image/logo.jpg" alt="logo" width="40">
     <a href="aboutme.html" >about</a>
     <a href="portfolio.html" >portfoio</a>
     <a href="resume.html" >resume</a>
@@ -29,11 +29,11 @@
 <button class="accordion"> project 1 html<p>html stan for Hyper Text Markup Language</p></button>
 <div class="panel">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
- <img src="image/table.png" height="308" width="521"/></div>
+ <img src="image/table.png" height="345" width="401" alt=""/></div>
 
 <button class="accordion">project 2 html-skeleton <p>Hypertext Markup Language </p></button>
 <div class="panel">
-    <img src="image/html-skeleton-DOCTYPE.png" height="198" width="273"/></p>
+    <img alt="" height="198" src="image/html-skeleton-DOCTYPE.png" width="273"/>
     <p></p>
 </div>
 
@@ -41,17 +41,17 @@
 <div class="panel">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-    <img src="image/Create-Tables-in-HTML.png" height="444" width="806"/>
+    <img alt="" height="444" src="image/Create-Tables-in-HTML.png" width="806"/>
    </div>
 <!-- the code that makes button works-->
 <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
+    let acc = document.getElementsByClassName("accordion");
+    let i;
 
     for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function() {
             this.classList.toggle("active");
-            var panel = this.nextElementSibling;
+            const panel = this.nextElementSibling;
             if (panel.style.display === "block") {
                 panel.style.display = "none";
             } else {
